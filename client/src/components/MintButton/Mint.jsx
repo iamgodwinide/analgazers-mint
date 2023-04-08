@@ -4,7 +4,7 @@ import newcontract from './Newcontract.json';
 import { useAlert } from 'react-alert';
 import { Progress } from 'reactstrap'
 
-const newcontractAddress = "0xe09a5F977737392F4e98f57c7683f01bfD288ce1";
+const newcontractAddress = "0x261303c3a830df45D6176e7F185b52Dcff941a34";
 
 const Mint = ({ accounts, setAccounts }) => {
     const [mintAmount, setMintAmount] = useState(1);
