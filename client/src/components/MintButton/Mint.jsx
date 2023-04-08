@@ -183,6 +183,9 @@ const Mint = ({ accounts, setAccounts }) => {
 
 
                     <div className="supply-wrap n-item">
+                        <p className='text-dark tex-center'>
+                        {totalSupply}/{maxSupply} Minted
+                        </p>
                         <Progress
                             animated
                             className="my-3"
@@ -191,10 +194,10 @@ const Mint = ({ accounts, setAccounts }) => {
                             style={{
                                 height: "2em",
                                 width: "100%",
-                                fontSize: "1em"
+                                fontSize: "1em",
+                                color:"#000"
                             }}
                         >
-                            {totalSupply}/{maxSupply}
                         </Progress>
                     </div>
                 </div>
