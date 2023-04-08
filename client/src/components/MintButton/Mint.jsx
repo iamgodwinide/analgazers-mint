@@ -187,7 +187,7 @@ const Mint = ({ accounts, setAccounts }) => {
                             animated
                             className="my-3"
                             color="danger"
-                            value="50"
+                            value={Math.round((totalSupply/maxSupply)*100)}
                             style={{
                                 height: "2em",
                                 width: "100%",

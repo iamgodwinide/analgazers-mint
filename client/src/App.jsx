@@ -22,7 +22,9 @@ function App() {
       <nav>
         <ul>
           <li>
-            <a href="#">
+            <a 
+            target="_blank"
+            href="https://opensea.io/collection/anal-gazers">
               <img src='/assets/opensea.png'/>
             </a>
           </li>
