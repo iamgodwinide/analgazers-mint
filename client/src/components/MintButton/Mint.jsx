@@ -30,7 +30,7 @@ const Mint = ({ accounts, setAccounts }) => {
             console.log("cost ---- ", cost)
             try {
                 const response = await contract.mint(BigNumber.from(mintAmount), {
-                    value: ethers.utils.parseEther((0.005 * (mintAmount - 1)).toString())
+                    value: ethers.utils.parseEther( mintAmount > 1 ? (price * mintAmount).toFixed(3) : 0 )
                 });
                 alert.success("minted successfully");
                 console.log(response);
